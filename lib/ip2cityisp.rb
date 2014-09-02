@@ -1,5 +1,3 @@
 require "ip2cityisp/version"
+require "ip2cityisp/database"
 
-module Ip2cityisp
-  # Your code goes here...
-end

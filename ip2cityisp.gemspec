@@ -6,10 +6,10 @@ require 'ip2cityisp/version'
 Gem::Specification.new do |spec|
   spec.name          = "ip2cityisp"
   spec.version       = Ip2cityisp::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["geda"]
+  spec.email         = ["beidou77@gmail.com"]
+  spec.summary       = %q{query ip from which city and isp}
+  spec.description   = %q{return isp and city}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,5 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 0.9"
+  spec.add_development_dependency "bindata", "~> 2.1"
 end
