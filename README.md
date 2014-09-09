@@ -1,6 +1,6 @@
 # Ip2cityisp
-
-TODO: Write a gem description
+input is ip
+output is city ,isp.
 
 ## Installation
 
@@ -20,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require 'rubygems'
+require 'bundler/setup'
+require 'ip2cityisp'
+ip =  ARGV[0]
+@db = Ip2cityisp::Database.new('/tmp/ipinfo.data')
+r = @db.query('8.8.8.8')
+rip = r["area"]+r["isp"]  
 
 ## Contributing
 
